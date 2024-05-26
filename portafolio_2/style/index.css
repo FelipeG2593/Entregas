@@ -1,0 +1,358 @@
+/*importacion*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* condiciones iniciales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #2666c0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/*----------- header------------------ */
+header {
+  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+   
+
+}
+
+.header div img {
+    padding: 15px 45px;
+    width: auto;
+    height: 120px;
+
+}
+
+.listamenu {
+
+    justify-content: center;
+    align-items: center;
+    margin: 4vh auto;
+
+}
+
+.listamenu li {
+    display: inline-block;
+    margin-right: 3vw;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.listamenu a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.listamenu h5 {
+    transition: all 0.3s;
+}
+
+.listamenu h5:hover {
+    transform: scale(1.2);
+
+}
+
+.header div {
+    margin-right: auto;
+}
+
+.btnfg {
+    border-radius: 25px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+
+
+.contenedor-banner {
+
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    gap: 128px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    right: 30%;
+    border-radius: 25px;
+
+
+}
+
+.contenedor-banner h1 {
+    color: aliceblue;
+    font-size: 60px;
+    text-shadow: 
+    -8px -8px 0 #255369,  
+     8px -8px 0 #255369,
+    -8px  8px 0 #255369,
+     8px  8px 0 #255369;
+
+8
+}
+
+.contenedor-banner img {
+    margin-top: 2%;
+    height: 600px;
+    width: auto;
+
+
+}
+
+
+/* ------------main------------- */
+
+main {
+    
+    width: 100vw;
+    height: auto;
+
+}
+
+/* contenedor perfil */
+.contenedor-perfil {
+    width: 100vw;
+    height: 80vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+
+    color: #114b9c;
+}
+
+.contenedor-perfil .titulo {
+    margin-bottom: 20px;
+}
+
+.contenedor-perfil .parrafo-perfil {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* contenedor tarjetas */
+
+
+.contenedor-tarjeta {
+
+   
+    width: 100vw;
+    height: 100vh;
+    background-color:;
+    position: relative;
+    text-align: center;
+    
+
+}
+
+.contenedor {
+    
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+.tarjetas {
+    background-color:aliceblue;
+    border:solid #2666c0 2px;
+    color: #114b9c;
+    border-radius: 25px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 8px;
+    position: absolute;
+    top: -25%;
+
+
+
+}
+
+.tarjetas p{
+    width: 50%;
+    text-align: justify;
+    display: contents;
+    margin: inline 1px;;
+    
+}
+    
+
+.terjeta .t{
+    font-size: 20px;
+    font-weight: bold;
+}
+.tarjetas .t{
+    margin-top: 6%;
+}
+.tarjetas p{
+    margin-top:10% ;
+}
+
+.span{
+    padding-top: 2%;
+    display:inline-block;
+
+}
+/* -----------footer----------- */
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width:100vw ;
+    height:30vh ;
+    background-color: aliceblue;
+    color: #114b9c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------*/
+
+@media (max-width: 1200px) {
+    .contenedor-banner {
+        width: 70vw;
+        height: 45vh;
+        flex-direction: column;
+        gap: 32px;
+        top: 20%;
+        right: 15%;
+    }
+
+    .contenedor-banner h1 {
+        font-size: 48px;
+    }
+
+    .contenedor-banner img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contenedor-banner {
+        width: 80vw;
+        height: 40vh;
+        top: 15%;
+        right: 10%;
+    }
+
+    .contenedor-banner h1 {
+        font-size: 36px;
+    }
+
+    .contenedor-banner img {
+        height: 300px;
+    }
+
+    .listamenu li {
+        margin-right: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-banner {
+        width: 90vw;
+        height: 35vh;
+        top: 10%;
+        right: 5%;
+    }
+
+    .contenedor-banner h1 {
+        font-size: 30px;
+    }
+
+    .contenedor-banner img {
+        height: 200px;
+    }
+
+    .listamenu {
+        flex-direction: column;
+        margin: 2vh auto;
+    }
+
+    .listamenu li {
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+
+    .contenedor-perfil {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor-banner {
+        width: 95vw;
+        height: 30vh;
+        top: 5%;
+        right: 2.5%;
+    }
+
+    .contenedor-banner h1 {
+        font-size: 24px;
+    }
+
+    .contenedor-banner img {
+        height: 150px;
+    }
+
+    .contenedor-perfil .titulo {
+        font-size: 24px;
+    }
+
+    .contenedor-perfil .parrafo-perfil {
+        width: 90%;
+    }
+
+    .contenedor {
+        width: 95%;
+    }
+
+    .tarjetas {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
