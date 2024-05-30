@@ -6,6 +6,10 @@
     <meta name="author" content="Felipe Garcia" />
     <meta name="keyworks" content="Recorrido, experiencia, estudios, cv" />
     <meta name="description" content="portafolio de Felipe Garcia" />
+    <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
+
+    
+    
 
     <!---link de estilos para boostrap-->
     <link
@@ -24,12 +28,13 @@
     <title>Felipe Garcia Montaño</title>
   </head>
   <body>
-    <!--iniciio del header------>
+    <!--------------------------------iniciio del header----------------------------->
     <header class="header">
-      <div>
-        <img src="./assets/Recurso 4Logo_FG.png" alt="logo Felipe Garcia" />
-      </div>
       <nav>
+        <div>
+          <img src="./assets/Recurso 4Logo_FG.png" alt="logo Felipe Garcia" />
+        </div>
+
         <ul class="listamenu">
           <li>
             <a href="https://github.com/FelipeG2593/"><h5>Repositorio</h5></a>
@@ -46,9 +51,10 @@
       <section class="contenedor-banner">
         <div class="caracteristicas">
           <h1>Diseñador, Desarrollador Fronted & Mentor.</h1>
+          <a href="#conoceme" class="btn btn-outline-light btnfg">Conóceme</a>
         </div>
 
-        <img src="./assets/Group 1.png" />
+        <img id="frontal" src="./assets/Group 1.png" />
       </section>
     </header>
 
@@ -56,7 +62,7 @@
     <main>
       <!-- seccion perfl profesional -->
 
-      <section class="contenedor-perfil">
+      <section class="contenedor-perfil" id="conoceme">
         <h2 class="titulo">Hola soy Felipe</h2>
         <p class="parrafo-perfil">
           Desde que comencé mi viaje como diseñador independiente hace 12 años,
@@ -72,70 +78,141 @@
         <article class="contenedor">
           <div class="tarjetas">
             <div class="tarjeta">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-card-image span" viewBox="0 0 16 16">
-                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
-                <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                fill="currentColor"
+                class="bi bi-card-image span"
+                viewBox="0 0 16 16"
+              >
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                <path
+                  d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"
+                />
               </svg>
               <h3 class="t">Diseñador</h3>
               <p>
-                Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.
+                Es un diseñador y maquetador de páginas web, reconocido por su
+                creatividad innovadora y limpia.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat
+                Con más de diez años de experiencia, Felipe transforma ideas en
+                sitios web atractivos y funcionales.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat
+                combina diseño visual impactante y usabilidad, garantizando
+                experiencias excepcionales para todos los usuario
               </p>
             </div>
             <div class="tarjeta">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-terminal-fill span" viewBox="0 0 16 16">
-                <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                fill="currentColor"
+                class="bi bi-terminal-fill span"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5z"
+                />
               </svg>
               <h3 class="t">Desarrollador Fronted</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat, 
+                desarrollador frontend talentoso, especializado en crear
+                interfaces web interactivas y dinámicas.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat, 
+                Utilizando tecnologías modernas, Felipe garantiza que cada sitio
+                web funcione sin problemas y sea visualmente atractivo.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat, 
+                Con un enfoque en la experiencia del usuario, Felipe García
+                optimiza cada detalle para máxima usabilidad.
               </p>
-
             </div>
             <div class="tarjeta">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-journal span" viewBox="0 0 16 16">
-                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
-                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                fill="currentColor"
+                class="bi bi-journal span"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"
+                />
+                <path
+                  d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"
+                />
               </svg>
               <h3 class="t">Mentor</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat, 
+                Felipe García es un mentor apasionado, dedicado a guiar nuevos
+                talentos en el desarrollo web.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat, 
+                Con su experiencia, Felipe ofrece valiosos consejos y apoyo,
+                ayudando a otros a crecer profesionalmente.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis totam ad suscipit temporibus repellat, 
+                Felipe García fomenta un aprendizaje práctico, motivando a sus
+                mentees a alcanzar su máximo potencial.
               </p>
             </div>
           </div>
         </article>
       </section>
+      <!--------------cuadro de grilla-------------------------------->
+      <section class="contenedor-card">
+        <div class="card">
+          <figure>
+            <img src="./assets/img3.png" />
+          </figure>
+          <div class="contenido">
+            <h3>Actividades en clase</h3>
+            <p>
+              Acá encontrarás las actividades que he realizado en el bootcamp.
+            </p>
+            <a href="https://github.com/FelipeG2593/actividadesClase"
+              >Ver contenido</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="./assets/img6.png" />
+          </figure>
+          <div class="contenido">
+            <h3>UX/UI</h3>
+            <p>Introducción al UX/UI con la mentora Natalia Diaz.</p>
+            <a
+              href="https://www.figma.com/design/MpZVW00OWpH1GbAOs7YDDe/PORTAFOLIO?node-id=0-1&t=79pFcdOTw9uJ74H4-1"
+              >Ver contenido</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="./assets/img7.png" />
+          </figure>
+          <div class="contenido">
+            <h3>Proyecto final</h3>
+            <p>
+              Etapas de desarrollo del proyecto de clausura llamado "Perfect
+              wig".
+            </p>
+            <a
+              href="https://www.figma.com/design/D88uMoUd3antkKSPeoXlVy/Untitled?m=auto&t=79pFcdOTw9uJ74H4-6"
+              >Ver contenido</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      Practica desarrollada por &copy;Felipe Garcia montaño
-
-
-    </footer>
+    <footer>Practica desarrollada por &copy;Felipe Garcia montaño</footer>
     <!---link de scripts para boostrap al final de la etiqueta body-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

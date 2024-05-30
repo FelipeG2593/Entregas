@@ -1,7 +1,7 @@
 /*importacion*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/eurostile-mn');
 /* condiciones iniciales */
 
 * {
@@ -19,28 +19,42 @@ body {
 
 /*----------- header------------------ */
 header {
-  
+
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
-   
 
+}
+
+nav {
+
+    width: 100%;
+    height: 120px;
+    display: flex;
+    padding: 0 35px;
+
+}
+
+.listamenu li h5 {
+
+    padding-top: 10px;
 }
 
 .header div img {
     padding: 15px 45px;
     width: auto;
     height: 120px;
+    flex-direction: column;
 
 }
 
 .listamenu {
 
+    height: 120px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4vh auto;
-
 }
 
 .listamenu li {
@@ -82,15 +96,17 @@ header {
 
 .contenedor-banner {
 
-    width: 60vw;
+    width: 100vw;
     height: 50vh;
     display: flex;
     gap: 128px;
+    flex-direction: row;
     position: absolute;
     justify-content: center;
     align-items: center;
     top: 25%;
-    right: 30%;
+    right: 0;
+    padding: 100px;
     border-radius: 25px;
 
 
@@ -99,34 +115,36 @@ header {
 .contenedor-banner h1 {
     color: aliceblue;
     font-size: 60px;
-    text-shadow: 
-    -8px -8px 0 #255369,  
-     8px -8px 0 #255369,
-    -8px  8px 0 #255369,
-     8px  8px 0 #255369;
+    text-shadow:
+        -8px -8px 0 #255369,
+        8px -8px 0 #255369,
+        -8px 8px 0 #255369,
+        8px 8px 0 #255369;
 
-8
+
 }
 
 .contenedor-banner img {
     margin-top: 2%;
     height: 600px;
     width: auto;
-
-
 }
 
+.caracteristicas a {
+    margin-top: 30px;
+
+}
 
 /* ------------main------------- */
 
 main {
-    
+
     width: 100vw;
     height: auto;
 
 }
 
-/* contenedor perfil */
+/* ---------contenedor perfil ---------------*/
 .contenedor-perfil {
     width: 100vw;
     height: 80vh;
@@ -135,7 +153,6 @@ main {
     flex-direction: column;
     padding-top: 100px;
     align-items: center;
-
     color: #114b9c;
 }
 
@@ -149,89 +166,141 @@ main {
     font-size: 20px;
 }
 
-/* contenedor tarjetas */
+/* --------------------contenedor tarjetas ---------------------*/
 
 
 .contenedor-tarjeta {
 
-   
     width: 100vw;
     height: 100vh;
-    background-color:;
     position: relative;
     text-align: center;
-    
+
+
 
 }
 
 .contenedor {
-    
+
     width: 85%;
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
 
-
-
-
 }
 
 .tarjetas {
-    background-color:aliceblue;
-    border:solid #2666c0 2px;
+    background-color: aliceblue;
+    border: solid #2666c0 3px;
     color: #114b9c;
     border-radius: 25px;
+    overflow: hidden;
     width: 85%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items:flex-start;
-    gap: 8px;
+    align-items: flex-start;
     position: absolute;
     top: -25%;
 
+}
 
+.tarjetas p {
+    width: 55%;
+    text-align:center;
+    font-weight:400;
+    margin: inline 3px;
+    margin-top: 10%;
+    line-height: 15px;
 
 }
 
-.tarjetas p{
-    width: 50%;
-    text-align: justify;
-    display: contents;
-    margin: inline 1px;;
-    
-}
-    
 
-.terjeta .t{
+
+
+.tarjeta {
+    border-right: 1px solid #2666c0;
+    border-left: 1px solid #2666c0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.tarjeta .t {
     font-size: 20px;
-    font-weight: bold;
-}
-.tarjetas .t{
     margin-top: 6%;
-}
-.tarjetas p{
-    margin-top:10% ;
+    font-weight: bold;
+
 }
 
-.span{
+
+
+.span {
     padding-top: 2%;
-    display:inline-block;
+    display: inline-block;
 
 }
-/* -----------footer----------- */
+
+/*-------------------- cuadro de grilla------------------------- */
+
+.contenedor-card {
+
+    display: flex;
+    margin: auto;
+    margin-bottom: 15%;
+    width: 85%;
+    height: 70vh;
+    justify-content: space-between;
+
+}
+
+.card {
+    background-color: aliceblue;
+    width: 100%;
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
 
 
-footer{
+}
+
+.card a {
+    text-decoration: none;
+    color: #114b9c;
+
+}
+
+.contenido {
+    text-align: center;
+
+}
+
+.card:hover {
+    transform: scale(1.1)
+}
+
+
+/* -----------footer------------------------------------ */
+
+
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    width:100vw ;
-    height:30vh ;
+    width: 100vw;
+    height: 20vh;
     background-color: aliceblue;
     color: #114b9c;
 }
@@ -240,119 +309,238 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
 /*-----------------------------*/
+/* responsive para tablet ------*/
 
-@media (max-width: 1200px) {
+@media screen and (min-width:500px) and (max-width:1024px) {
+
+
     .contenedor-banner {
-        width: 70vw;
-        height: 45vh;
-        flex-direction: column;
-        gap: 32px;
-        top: 20%;
-        right: 15%;
-    }
-
-    .contenedor-banner h1 {
-        font-size: 48px;
-    }
-
-    .contenedor-banner img {
-        height: 400px;
-    }
-}
-
-@media (max-width: 992px) {
-    .contenedor-banner {
-        width: 80vw;
-        height: 40vh;
-        top: 15%;
-        right: 10%;
-    }
-
-    .contenedor-banner h1 {
-        font-size: 36px;
-    }
-
-    .contenedor-banner img {
-        height: 300px;
-    }
-
-    .listamenu li {
-        margin-right: 2vw;
-    }
-}
-
-@media (max-width: 768px) {
-    .contenedor-banner {
-        width: 90vw;
-        height: 35vh;
+        height: 80vh;
         top: 10%;
-        right: 5%;
+        flex-direction: column-reverse;
+        text-align: center;
+
+
     }
 
-    .contenedor-banner h1 {
-        font-size: 30px;
-    }
-
-    .contenedor-banner img {
-        height: 200px;
-    }
-
-    .listamenu {
+    .caracteristicas {
+        display: flex;
         flex-direction: column;
-        margin: 2vh auto;
-    }
-
-    .listamenu li {
-        margin-right: 0;
-        margin-bottom: 2vh;
     }
 
     .contenedor-perfil {
-        padding-top: 20px;
-    }
-}
+        height: 50vh;
 
-@media (max-width: 576px) {
-    .contenedor-banner {
-        width: 95vw;
-        height: 30vh;
-        top: 5%;
-        right: 2.5%;
     }
 
-    .contenedor-banner h1 {
-        font-size: 24px;
-    }
-
-    .contenedor-banner img {
-        height: 150px;
-    }
-
-    .contenedor-perfil .titulo {
-        font-size: 24px;
-    }
-
-    .contenedor-perfil .parrafo-perfil {
-        width: 90%;
-    }
-
-    .contenedor {
-        width: 95%;
+    .contenedor-tarjeta {
+        height: 110vh;
     }
 
     .tarjetas {
-        width: 100%;
         flex-direction: column;
-        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        top: -15%;
+
     }
+
+    .tarjeta {
+        border-top: 1px solid #2666c0;
+        border-bottom: 1px solid #2666c0;
+        border-right: none;
+        border-left: none;
+
+
+
+
+
+    }
+
+    .tarjeta p {
+        margin-top: 4%;
+        width: 80%;
+        font-size: 25px;
+        line-height: 25px;
+        text-align: justify;
+
+
+
+    }
+
+
+    .contenedor-card{
+        margin-bottom: 2%;
+    }
+
+
+    .card {
+        height: 40vh;
+    
+    
+    }
+
+
 }
+
+
+
+/* ---------------vista de movil--------------------------------- */
+
+@media screen and (max-width: 490px) {
+    body {
+        background-color: red;
+        font-size: 6px;
+        overflow-x: hidden;
+        
+    }
+
+    nav{
+       flex-direction: column;
+       
+        
+    }
+    nav img{
+       top:600px;
+       margin-left: 90px;
+    }
+
+    nav .listamenu{
+        margin-left: 90px;
+    }
+
+    .caracteristicas{
+       
+       display: flex;
+       justify-content: center;
+       text-align: left;
+       margin-left:19% ;
+       margin:auto;
+      
+    }
+
+    .frontal{
+        margin-top: 20%;
+        height:12vh;
+        width:20px ;
+    }
+
+
+
+    .contenedor-banner {
+      
+        height: 20%;
+        width: 80%;
+        top: 60%;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        
+       
+    }
+
+
+    .caracteristicas {
+       
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor-perfil {
+        width: 100%;
+        margin-top: 95%;
+        justify-content: center;
+        align-items:center;
+
+    }
+
+    .contenedor-tarjeta {
+        height: 280vh;
+        width:100%;
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+       
+    }
+
+    .contenido p{
+        font-size: 12px;
+    }
+
+    .contenido a{
+        font-size:20px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 4%;
+
+
+    }
+
+    .tarjeta {
+        border-top: 1px solid #2666c0;
+        border-bottom: 1px solid #2666c0;
+        border-right: none;
+        border-left: none;
+
+       
+        
+    }
+
+    .tarjeta p {
+       
+        width: 88%;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: justify;
+
+
+
+    }
+
+
+    .contenedor-card{
+        top:50;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        margin-left: 12%;
+        height:300vh ;
+        height:100%;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+
+    .card {
+        height:50%;
+        width:80% ;
+        flex-direction: column;
+        display: flex;
+        justify-content: left;
+       
+       
+    
+    
+    }
+
+    footer{
+        font-size: medium;
+        height:100%;
+        width:100% ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+}
+
+
